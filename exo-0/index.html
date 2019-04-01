@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h1>Exercice 0</h1>
+
+    <script type="text/javascript"> // Balise JavaScript
+        /* Section 1 */
+
+        var name = "Joe"; //je déclare une variable nommé name pour porte la valeur "Joe"
+        var city = 'London'; //je déclare une variable nommé city pour porte la valeur 'London'
+        var age = 32; //je déclare une variable nommé age pour porte la valeur 32
+        var isRed = true; //je déclare une variable nommé isRed pour porte la valeur booléenne true
+        var isOld = age > 80; //je déclare une variable nommé isOld pour porte la valeur age plus grand que 80
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //je déclare une variable tableau nommé previousJobs pour porte les valeurs 'lawyer', 'developper', 'Professionnal climber'
+
+        function info(height, weight) { //je déclare une fonction qui contiendra les infos taille et poids
+            if (height > 180) { //si vous faites plus d'1m80
+                console.log('Vous êtes grand'); //alors vous être grand
+            }
+            if (weight < 0) { //si votre poids fait moins de 0
+                console.log('oups, there is a problem'); //alors il y a un probleme
+            } else if (weight < 15) { //sinon si votre poids fait moins de 15
+                console.log('Are you that slim ?') //on print 'êtes vous aussi mince ?'
+            } else { //sinon
+                console.log('Good !') //on print 'bien!'
+            }
+        }
+
+        info(165, 45); // j'appelle la fonction info avec pour paramètres 165 et 45
+
+        var myHeight = 175; //je déclare une variable nommé myHeight pour porte la valeur 175
+        var myWeight = 86; //je déclare une variable nommé myWeight pour porte la valeur 86
+
+        info(myHeight, myWeight); // j'appelle la fonction info avec pour paramètres myHeight et myWeight
+
+        info(myHeight + 15, myWeight - 100); // j'appelle la fonction info avec pour paramètres myHeight + 15 et myWeight - 100
+
+        function toUpper(variable) { //je déclare une fonction nommé toUpper pour porte la valeur variable
+            return variable.toUpperCase(); //renvoi les variables en lettre majuscule
+        }
+
+        var upperName = toUpper(name); //je déclare une variable de nom upperName qui prendra la méthode toUpper et écrira le nom en majuscule
+
+        for (i = 0; i < 3; i = i + 1) { //je déclare une boucle for parcourant le tableau i 3 fois en l'incrémentant de 1 à chaque tour
+            console.log(previousJobs[i]); //j'affiche les previousJobs (jobs précédent)
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.     
+        console.log(city);
+        // afficher si Joe est roux ou pas.
+        console.log(name + ' is a redhead : ' + isRed);
+        /* Section 3 */
+        var myVariable = "Maintenant elle est définie!!";
+        console.log(myVariable); // myVariable n'est pas définie
+
+    </script>
+
+</body>
+
+</html>
