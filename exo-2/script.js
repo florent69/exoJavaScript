@@ -1,8 +1,9 @@
 // you can write js here
 console.log('exo-2');
-var age = 10;
+
 var raceNumber = 0;
-var name = 'Tom';
+var name = prompt('Si tu es inscrit, quel est ton nom ?');
+var age = prompt('Quel est ton âge ?');
 var register = name || 'non-register';
 
 if (register === 'non-register'){
