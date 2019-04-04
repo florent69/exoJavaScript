@@ -75,6 +75,7 @@ function addGame(opponentAdd, teamPointAdd, opponentPointAdd) {
 }
 
 addPlayer("Flo", "Ta", 34);
+addPlayer("Alexis", "Debuire", 21);
 addPlayer("Alex", "Debuire", 21);
 
 addGame("St-Etienne", 65, 10);
@@ -102,18 +103,23 @@ console.log("les points des Adverses : " + moyenneOp);
 
 var older = 0;
 var olderName = "";
-team._players.forEach(function (element) {
-    if (element.age > older) {          //
-        older = element.age;
-        olderName = element.firstName;
+team._players.forEach(function (element) {  // pour chaque element de _players
+    if (element.age > older) {          // si l'age est plus grand //
+        older = element.age;            // older = le plus grand nb //
+        olderName = element.firstName;  // le nom du plus vieux //
     }
 });
 
 var alphaOrder = [];
 team._players.forEach(function (element) {           // Tri alphabétique avec forEach //
-    console.log(element.firstName);
+    // console.log(element.firstName);
     alphaOrder.push(element.firstName);
 });
+
+console.log(team._players.sort(function(a, b) {   // Tri du tableau entier par le firstName //
+    return a.firstName.localeCompare(b.firstName);        // .sort
+
+}));                                                        // .localeCompare
 
 console.log("The older age is : " + older);
 console.log("And his name is : " + olderName);
