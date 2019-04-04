@@ -68,6 +68,7 @@ et relancer le programme.
 Vous avez été recruté pour écrire un programme pour gérer les inscriptions d'une course à pied. Tous les adultes courront le matin et tous les personnes qui ont moins de 18 ans l'après midi. Suivez les instructions afin de développer la logique du programme.
 
 1. Créer une variable pour stocker si un coureur est déjà inscrit ou pas. Quel est le type de cette variable ?
+short-circuit evaluation
 
 2. Créer une variable pour stocker l'âge du coureur.
 
@@ -158,7 +159,7 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 
 1. Créer une variable nommée `input` qui prends pour valeur n'importe quelle phrase ou mot à traduire.
 
-2. Nous allons aussi créer un tableau de lettres. Puisque la langue des baleines contient que des voyelles, créer une variable `vowels` de type tableau contenant toutes les voyelles.
+2. Nous allons aussi créer un tableau de lettres. Puisque la langue des baleines contient que des voyelles, créer une variable `voyels` de type tableau contenant toutes les voyelles.
 
 3. Nous allons stocker la chaine traduite dans un tableau. Créer donc une variable `resultArray` dont la valeur est un tableau vide.
 
